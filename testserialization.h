@@ -1,11 +1,10 @@
 #ifndef TESTSERIALIZATION_H
 #define TESTSERIALIZATION_H
-
-
-class testSerialization
-{
-public:
-    testSerialization();
-};
-
+#include "serialization.h"
+struct Message;
+struct LogInOut;
+void loginout_test();
+void message_test();
+void print_message(const Message &msg);
+void printLogInout(const LogInOut &log);
 #endif // TESTSERIALIZATION_H
